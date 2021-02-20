@@ -1,3 +1,9 @@
 export const TRANSLATIONS_EN = {
-  welcome: 'Welcome to the tutorial',
+  title: 'Details',
+  name: 'Name',
+  type: 'Type',
+  types: {
+    building: 'Building',
+  },
+  wood_wall_45: { Name: 'Wood wall 45°' },
 };

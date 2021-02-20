@@ -1,6 +1,7 @@
 {
-    "_id": "dummyid",
-    "Name":"Blood pudding",
+  "blood_pudding": {
+    "_id": "blood_pudding",
+    "Name": "Blood pudding",
     "Type": "Food",
     "Dropped by": "Cauldron",
     "Usage": "Eating",
@@ -20,4 +21,19 @@
       "Duration(s)": 2400,
       "Healing (hp/tick)": 4
     }
+  },
+  "wood_wall_45": {
+    "_id": "wood_wall_45",
+    "Name": "Wood wall 45°",
+    "Type": "Building",
+    "Source": "Workbench",
+    "Properties": {
+      "Durability": null,
+      "Size": "2x2",
+      "Teleportable": true,
+      "Crafting Materials": {
+        "Wood": 2
+      }
+    }
   }
+}
