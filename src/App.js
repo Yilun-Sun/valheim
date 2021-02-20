@@ -1,8 +1,9 @@
 import './App.scss';
 import { Image, CloudinaryContext } from 'cloudinary-react';
-import { useEffect, useState  } from 'react';
+import { useEffect, useState } from 'react';
 
 import { ExampleComponent } from './component/ExampleComponent';
+import { Armor } from './component/Armor/Armor';
 import i18n from 'i18next';
 import { useTranslation } from 'react-i18next';
 import { Popover, Button } from 'antd';
@@ -26,9 +27,33 @@ function App() {
     getData();
   }, []);
 
-  const content = (data) => <ExampleComponent data={data} />;
+  console.log(itemData);
+
+  // const content = (data) => <ExampleComponent data={data} />;
+
   const { t } = useTranslation();
-  const title = <span>{t('title')}</span>
+  const title = (itemId) => <span className="title">{t(itemId + '.Name')}</span>;
+
+  const arr = [];
+
+  Object.values(itemData).forEach((item) => {
+    let content;
+    switch (item.Type) {
+      case 'Armor':
+        content = <Armor data={item} />;
+        break;
+
+      default:
+        content = <ExampleComponent data={item} />;
+        break;
+    }
+
+    arr.push(
+      <Popover content={content} title={title(item._id)} key={item._id}>
+        <Image className='item64' publicId={`sprite/${item.Type}/${item.IconName}`} width='64' draggable='false' />
+      </Popover>
+    );
+  });
 
   return (
     <div className='App'>
@@ -37,11 +62,7 @@ function App() {
         <Button onClick={() => i18n.changeLanguage('zh')}>zh</Button>
       </div>
       <header className='App-header'>
-        <Popover content={content(itemData.wood_wall_45)} title={title}>
-          <CloudinaryContext cloudName='valheim'>
-            <Image className='item64' publicId='sprite/wood_wall_roof_45_f8odce.png' width='64' draggable='false' />
-          </CloudinaryContext>
-        </Popover>
+        <CloudinaryContext cloudName='valheim'>{arr}</CloudinaryContext>
       </header>
     </div>
   );

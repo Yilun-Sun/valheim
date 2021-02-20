@@ -3,23 +3,24 @@
     "_id": "blood_pudding",
     "Name": "Blood pudding",
     "Type": "Food",
-    "Dropped by": "Cauldron",
+    "DroppedBy": "Cauldron",
     "Usage": "Eating",
+    "IconName": "BloodPudding_odf2rz",
     "Properties": {
       "Weight": 1.0,
       "Stack": 1,
       "Teleportable": true,
-      "Crafting Materials": {
+      "CraftingMaterials": {
         "Thistle": 2,
         "Bloodbag": 2,
-        "Barley flour": 4
+        "Barleyflour": 4
       }
     },
     "Effects": {
-      "Max Health": 90,
-      "Max Stamina": 50,
+      "MaxHealth": 90,
+      "MaxStamina": 50,
       "Duration(s)": 2400,
-      "Healing (hp/tick)": 4
+      "Healing(hp/tick)": 4
     }
   },
   "wood_wall_45": {
@@ -27,13 +28,37 @@
     "Name": "Wood wall 45°",
     "Type": "Building",
     "Source": "Workbench",
+    "IconName": "wood_wall_roof_45_f8odce",
     "Properties": {
       "Durability": null,
       "Size": "2x2",
       "Teleportable": true,
-      "Crafting Materials": {
+      "CraftingMaterials": {
         "Wood": 2
       }
+    }
+  },
+  "helmet_bronze": {
+    "_id": "helmet_bronze",
+    "Name": "Bronze helmet",
+    "Type": "Armor",
+    "Source": "Workbench",
+    "IconName": "HelmetBronze_xxhpoy",
+    "Properties": {
+      "Weight": 3.0,
+      "Durability": 1000,
+      "CraftingLevel": 1,
+      "RepairLevel": 1,
+      "CraftingMaterials": {
+        "Bronze": 5,
+        "DeerHide": 2
+      }
+    },
+    "Defensive": {
+      "Armor": 8
+    },
+    "Effects": {
+      "SetPieces": "Bronze armor (no effect)"
     }
   }
 }

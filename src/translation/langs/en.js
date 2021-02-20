@@ -1,9 +1,40 @@
 export const TRANSLATIONS_EN = {
-  title: 'Details',
-  name: 'Name',
-  type: 'Type',
-  types: {
-    building: 'Building',
+  Title: 'Details',
+  Name: 'Name',
+  Source: 'Source',
+  Properties: {
+    Properties: 'Properties',
+    Weight: 'Weight',
+    Durability: 'Durability',
+    CraftingLevel: 'Crafting Level',
+    RepairLevel: 'Repair Level',
+    CraftingMaterials: 'Crafting Materials',
   },
-  wood_wall_45: { Name: 'Wood wall 45°' },
+  Defensive: {
+    Defensive:'Defensive',
+    Armor: 'Armor',
+  },
+  Effects: {
+    Effects:'Effects',
+    SetPieces: 'Set Pieces',
+  },
+  Types: {
+    Type: 'Type',
+    Building: 'Building',
+    Armor: 'Armor',
+    Food: 'Food',
+    Weapons: 'Weapons',
+    Tools: 'Tools',
+    Resources: 'Resources',
+    Ores: 'Ores',
+  },
+  blood_pudding: {
+    Name: 'Blood pudding',
+  },
+  wood_wall_45: {
+    Name: 'Wood wall 45°',
+  },
+  helmet_bronze: {
+    Name: 'Bronze helmet',
+  },
 };
