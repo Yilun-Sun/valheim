@@ -1,22 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.scss';
+import { Image, CloudinaryContext } from 'cloudinary-react';
+import { useEffect } from 'react';
+
+import { ExampleComponent } from "./component/ExampleComponent";
+import i18n from "i18next";
 
 function App() {
+  const getData = () => {
+    fetch('data/item.json', {
+      headers: {
+        'Content-Type': 'application/json',
+        Accept: 'application/json',
+      },
+    })
+      .then((r) => r.json())
+      .then((data) => {
+        console.log(data);
+      });
+  };
+  useEffect(() => {
+    getData();
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div className='App'>
+      <header className='App-header'>
+        <CloudinaryContext cloudName='valheim'>
+          <Image className='item64' publicId='sprite/wood_wall_roof_45_f8odce.png' width='64' draggable='false' />
+        </CloudinaryContext>
+        <ExampleComponent />
+        <button onClick={() => i18n.changeLanguage('en')}>en</button>
+        <button onClick={() => i18n.changeLanguage('zh')}>zh</button>
       </header>
     </div>
   );
