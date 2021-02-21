@@ -50,8 +50,8 @@
       "CraftingLevel": 1,
       "RepairLevel": 1,
       "CraftingMaterials": {
-        "Bronze": 5,
-        "DeerHide": 2
+        "bronze": 5,
+        "deer_hide": 2
       }
     },
     "Defensive": {
@@ -59,6 +59,38 @@
     },
     "Effects": {
       "SetPieces": "Bronze armor (no effect)"
+    }
+  },
+  "bronze": {
+    "_id": "bronze",
+    "Name": "Bronze",
+    "Type": "Metal",
+    "DroppedBy": "Forge",
+    "Usage": ["Crafting","Building"],
+    "IconName": "bronze_tin0xk",
+    "SourceLevel": 1,
+    "Properties": {
+      "Weight": 12.0,
+      "Stack": 30,
+      "Teleportable": false,
+      "CraftingMaterials": {
+        "copper": 2,
+        "tin": 1
+      }
+    }
+  },
+  "deer_hide": {
+    "_id": "deer_hide",
+    "Name": "Deer hide",
+    "Type": "Material",
+    "DroppedBy": "deer",
+    "Usage": ["Crafting","Building"],
+    "IconName": "deerhide_jc1kgt",
+    "SourceLevel": 1,
+    "Properties": {
+      "Weight": 1.0,
+      "Stack": 50,
+      "Teleportable": true
     }
   }
 }

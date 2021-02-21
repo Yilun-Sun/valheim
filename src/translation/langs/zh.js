@@ -27,14 +27,30 @@ export const TRANSLATIONS_ZH = {
     Tools: '工具',
     Resources: '资源',
     Ores: 'Ores',
+    Metal: '金属',
+    Material: '材料',
   },
-  blood_pudding: {
-    Name: '血旺',
-  },
-  wood_wall_45: {
-    Name: '木墙 45°',
-  },
-  helmet_bronze: {
-    Name: '青铜头盔',
+  Items: {
+    blood_pudding: {
+      Name: '血旺',
+    },
+    wood_wall_45: {
+      Name: '木墙 45°',
+    },
+    helmet_bronze: {
+      Name: '青铜头盔',
+    },
+    bronze: {
+      Name: '青铜',
+    },
+    deer_hide: {
+      Name: '鹿皮',
+    },
+    copper: {
+      Name: '铜',
+    },
+    tin: {
+      Name: '锡',
+    },
   },
 };

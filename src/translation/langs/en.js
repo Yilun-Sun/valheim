@@ -11,11 +11,11 @@ export const TRANSLATIONS_EN = {
     CraftingMaterials: 'Crafting Materials',
   },
   Defensive: {
-    Defensive:'Defensive',
+    Defensive: 'Defensive',
     Armor: 'Armor',
   },
   Effects: {
-    Effects:'Effects',
+    Effects: 'Effects',
     SetPieces: 'Set Pieces',
   },
   Types: {
@@ -27,14 +27,30 @@ export const TRANSLATIONS_EN = {
     Tools: 'Tools',
     Resources: 'Resources',
     Ores: 'Ores',
+    Metal: 'Metal',
+    Material: 'Material',
   },
-  blood_pudding: {
-    Name: 'Blood pudding',
-  },
-  wood_wall_45: {
-    Name: 'Wood wall 45°',
-  },
-  helmet_bronze: {
-    Name: 'Bronze helmet',
+  Items: {
+    blood_pudding: {
+      Name: 'Blood pudding',
+    },
+    wood_wall_45: {
+      Name: 'Wood wall 45°',
+    },
+    helmet_bronze: {
+      Name: 'Bronze helmet',
+    },
+    bronze: {
+      Name: 'Bronze',
+    },
+    deer_hide: {
+      Name: 'Deer hide',
+    },
+    copper: {
+      Name: 'Copper',
+    },
+    tin: {
+      Name: 'Tin',
+    },
   },
 };
