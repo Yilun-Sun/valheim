@@ -4,32 +4,32 @@ import { useEffect, useState } from 'react';
 
 import { ExampleComponent } from './component/Default/ExampleComponent';
 import i18n from 'i18next';
-import { useTranslation } from 'react-i18next';
+// import { useTranslation } from 'react-i18next';
 import { Popover, Button } from 'antd';
 
 import { Metal } from './component/Metal-1/Metal';
 import { Food } from './component/Food-2/Food';
 import { Weapon } from './component/Weapon-3/Weapon';
 
-const drawCubicPath = (startPoint, endPoint) => {
-  // offset to icon center
-  startPoint = [startPoint[0] + 32, startPoint[1] + 32];
-  endPoint = [endPoint[0] + 32, endPoint[1] + 32];
-  const controlPoint1 = [(startPoint[0] + endPoint[0]) / 2, startPoint[1]];
-  const controlPoint2 = [(startPoint[0] + endPoint[0]) / 2, endPoint[1]];
-  return (
-    <path
-      key=''
-      d={`
-    M ${startPoint}
-    C ${controlPoint1} ${controlPoint2} ${endPoint}
-  `}
-      fill='none'
-      stroke='rgba(255,255,255, 0.5)'
-      strokeWidth={2}
-    />
-  );
-};
+// const drawCubicPath = (startPoint, endPoint) => {
+//   // offset to icon center
+//   startPoint = [startPoint[0] + 32, startPoint[1] + 32];
+//   endPoint = [endPoint[0] + 32, endPoint[1] + 32];
+//   const controlPoint1 = [(startPoint[0] + endPoint[0]) / 2, startPoint[1]];
+//   const controlPoint2 = [(startPoint[0] + endPoint[0]) / 2, endPoint[1]];
+//   return (
+//     <path
+//       key=''
+//       d={`
+//     M ${startPoint}
+//     C ${controlPoint1} ${controlPoint2} ${endPoint}
+//   `}
+//       fill='none'
+//       stroke='rgba(255,255,255, 0.5)'
+//       strokeWidth={2}
+//     />
+//   );
+// };
 
 function App() {
   const [itemData, setItemData] = useState(0);
@@ -53,7 +53,7 @@ function App() {
 
   // const content = (data) => <ExampleComponent data={data} />;
 
-  const { t } = useTranslation();
+  // const { t } = useTranslation();
   const getTitle = (title) => <span className='title'>{title}</span>;
 
   const path = [];
