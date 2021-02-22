@@ -20,6 +20,9 @@ export const TRANSLATIONS_EN = {
   },
   Types: {
     Type: 'Type',
+    1: 'Metal',
+    2: 'Food',
+    3: 'Weapons',
     Building: 'Building',
     Armor: 'Armor',
     Food: 'Food',

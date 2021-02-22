@@ -20,6 +20,9 @@ export const TRANSLATIONS_ZH = {
   },
   Types: {
     Type: '类别',
+    1: '金属',
+    2: '食物',
+    3: '武器',
     Building: '建筑',
     Armor: '护甲',
     Food: '食物',
